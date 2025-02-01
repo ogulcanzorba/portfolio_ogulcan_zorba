@@ -1,11 +1,21 @@
 import styles from "./HeroStyles.module.css";
 import heroImg from "../../assets/hero-img.png";
-import themeIcon from "../../assets/sun.svg";
-import LinkedInIcon from "../../assets/linkedin-light.svg";
-import GithubIcon from "../../assets/github-light.svg";
+import sun from "../../assets/sun.svg";
+import moon from "../../assets/moon.svg";
+import LinkedInLight from "../../assets/linkedin-light.svg";
+import LinkedInDark from "../../assets/linkedin-dark.svg";
+import GithubLight from "../../assets/github-light.svg";
+import GithubDark from "../../assets/github-dark.svg";
 import CV from "../../assets/cv.pdf";
+import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
+  const { theme, toggleTheme } = useTheme();
+
+  const themeIcon = theme === "light" ? sun : moon;
+  const LinkedInIcon = theme === "light" ? LinkedInLight : LinkedInDark;
+  const GithubIcon = theme === "light" ? GithubLight : GithubDark;
+
   return (
     <section id="hero" className="">
       <div className={styles.colorModeContainer}>
@@ -18,6 +28,7 @@ function Hero() {
           className={styles.colorMode}
           src={themeIcon}
           alt="Color mode icon"
+          onClick={toggleTheme}
         />
       </div>
       <div className={styles.info}>
