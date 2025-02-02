@@ -1,8 +1,8 @@
 import styles from "./ProjectsStyles.module.css";
-import viberr from "../../assets/viberr.png";
-import freshBurger from "../../assets/fresh-burger.png";
-import hipsster from "../../assets/hipsster.png";
-import fitLift from "../../assets/fitlift.png";
+import onewordmood from "../../assets/one_word_mood.png";
+import geminitutor from "../../assets/gemini.png";
+import Bob from "../../assets/movie_rating.png";
+import Youtube from "../../assets/youtube.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
@@ -11,28 +11,28 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={viberr}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Viberr"
-          p="Streaming App"
+          src={onewordmood}
+          link="https://github.com/ogulcanzorba/One_Word_Mood"
+          h3="One Word Mood"
+          p="Social Media App"
         />
         <ProjectCard
-          src={freshBurger}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Fresh Burger"
-          p="Hamburger Restaurant"
+          src={geminitutor}
+          link="https://github.com/ogulcanzorba/BTK_Akademi_Proje"
+          h3="Gemini Supported Tutor"
+          p="DS&Algorithms Tutor"
         />
         <ProjectCard
-          src={hipsster}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Hipsster"
-          p="Glasses Shop"
+          src={Bob}
+          link="https://github.com/boraeryazgan/BOB"
+          h3="BOB"
+          p="Movie Rating App"
         />
         <ProjectCard
-          src={fitLift}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="FitLift"
-          p="Fitness App"
+          src={Youtube}
+          link="https://github.com/ogulcanzorba/Youtube-Video-Parser"
+          h3="Parser"
+          p="Youtube Video Parser"
         />
       </div>
     </section>
