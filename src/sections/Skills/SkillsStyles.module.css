@@ -14,34 +14,123 @@
   }
 }
 
-.skillList {
-  display: flex;
-  justify-content: space-evenly;
-  align-self: center;
-  flex-wrap: wrap;
-  row-gap: 40px;
-  max-width: 26ch;
+.categorySection {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
 }
 
-hr {
-  width: 100px;
-  height: 1px;
-  border: none;
-  background-color: var(--text-color);
-  margin: 30px auto;
+.categorySection:hover {
+  transform: translateY(-2px);
+}
+
+.categoryTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skillList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skillList span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 200ms ease-in-out;
+}
+
+.skillList span:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgb(0, 0, 0);
+}
+
+.skillList img {
+  width: 16px;
+  height: 16px;
+}
+
+.skillList p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  color: var(--btn-text-color);
 }
 
 @media (width >= 800px) {
-  .skillList {
-    max-width: fit-content;
-    gap: 30px;
-
-    p {
-      font-size: 20px;
-    }
+  .categorySection {
+    margin-bottom: 50px;
+    padding: 30px;
   }
 
-  hr {
-    width: 300px;
+  .categoryTitle {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .skillList {
+    gap: 25px;
+    max-width: 1000px;
+  }
+
+  .skillList span {
+    padding: 10px 20px;
+  }
+
+  .skillList p {
+    font-size: 16px;
+  }
+
+  .skillList img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (width >= 1200px) {
+  .categorySection {
+    margin-bottom: 60px;
+    padding: 40px;
+  }
+
+  .categoryTitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .skillList {
+    gap: 30px;
+    max-width: 1200px;
+  }
+
+  .skillList span {
+    padding: 12px 24px;
+  }
+
+  .skillList p {
+    font-size: 18px;
+  }
+
+  .skillList img {
+    width: 20px;
+    height: 20px;
   }
 }
