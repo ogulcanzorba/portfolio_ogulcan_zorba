@@ -4,8 +4,10 @@
   justify-content: center;
   gap: 20px;
   text-align: center;
-  height: 100dvh;
-  min-height: 500px;
+  /* height: 100dvh; */
+  /* min-height: 500px; */
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   .hero {
     max-width: 200px;
@@ -51,6 +53,24 @@
     transform: translateY(2px);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
   }
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonGroup a,
+.buttonGroup a:visited {
+  text-decoration: none;
+}
+
+.buttonGroup a {
+  align-self: unset;
+  display: flex;
+  align-items: center;
 }
 
 .colorModeContainer {

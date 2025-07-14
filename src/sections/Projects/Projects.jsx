@@ -54,12 +54,6 @@ function Projects() {
           h3="BOB Movie Rating App"
           p="Collaborative movie rating & recommendation platform"
         />
-        <ProjectCard
-          src={Youtube}
-          link="https://github.com/ogulcanzorba/Youtube-Video-Parser"
-          h3="YouTube Video Parser"
-          p="Web scraping tool for YouTube data analysis"
-        />
       </div>
     </section>
   );

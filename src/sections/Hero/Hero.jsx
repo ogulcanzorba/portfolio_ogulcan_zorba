@@ -50,9 +50,14 @@ function Hero() {
           CS Engineering student with a passion for creating scalable tech
           solutions.
         </p>
-        <a href={CV} download>
-          <button className="hover">Resume</button>
-        </a>
+        <div className={styles.buttonGroup}>
+          <a href={CV} target="_blank" rel="noopener noreferrer">
+            <button className="hover">Resume</button>
+          </a>
+          <a href="/IWIS2025s.pdf" target="_blank" rel="noopener noreferrer">
+            <button className="hover">IWIS 2025 Article</button>
+          </a>
+        </div>
       </div>
     </section>
   );
